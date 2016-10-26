@@ -1,0 +1,12 @@
+approve_by_comment: true
+approve_regex: '^(Approved|:shipit:|LGTM|:\+1:)'
+author_approval: ignored
+reject_regex: '^(Rejected|:-1:)'
+reject_value: -10
+reset_on_push: false
+reset_on_reopened: true
+reviewers:
+  -
+    name: team
+    required: 1
+    members: all
