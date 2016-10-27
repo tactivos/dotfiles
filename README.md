@@ -13,6 +13,7 @@ If you're interested in the philosophy behind why projects like these are awesom
 ## What's on the box
 
 - **PullApprove**. Default configuration for `.pullapprove` with the common rules and criterias we share among different projects. 
+- **Zappr**. Default configuration for `.zappr` with the common commit message patten we share among different projects.
 
 ## Contributing 
 Feel free to provide updates, open pull-requests and create issues with questions or suggestions. We want to have a central place for this, and then it's up to you to download it, tweak it and such.
