@@ -1,12 +1,21 @@
-approve_by_comment: true
-approve_regex: '^(Approved|:shipit:|LGTM|:\+1:)'
-author_approval: ignored
-reject_regex: '^(Rejected|:-1:)'
-reject_value: -10
-reset_on_push: false
-reset_on_reopened: true
-reviewers:
-  -
-    name: team
+version: 2
+
+always_pending:
+    title_regex: '^(\[NOT[_\s]READY\]|\[not[_\s]ready\]|\[EXPERIMENT\]|\[experiment\]|\[DO[_\s]NOT[_\s]MERGE\]|\[do[_\s]not[_\s]merge\])'
+    explanation: 'Work in progress...'
+
+group_defaults:
+  approve_by_comment:
+    enabled: true
+    approve_regex: '^(Approved|:shipit:|LGTM|:\+1:)'
+  reset_on_push:
+    enabled: false
+  reset_on_reopened:
+    enabled: true
+  author_approval:
+    ignored: true
+    
+groups:
+  team:
     required: 1
-    members: all
+    users: all
